@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="side">
+            <h2>Saved places</h2>
+            <ul id="saved"></ul>
+            <p id="saved-empty" class="muted">Tap the star on a city to save it here.</p>
+        </aside>
+
+        <main class="main">
+            <header class="top">
+                <div class="search">
+                    <input id="q" type="search" placeholder="Search city…" autocomplete="off" aria-label="Search city"
+                        role="combobox" aria-expanded="false" aria-controls="suggest">
+                    <ul id="suggest" role="listbox" hidden></ul>
+                </div>
+                <button id="locate" class="btn" title="Use my location" aria-label="Use my location">Locate</button>
+                <div class="seg" role="group" aria-label="Units">
+                    <button id="metric" aria-pressed="true">°C</button>
+                    <button id="imperial" aria-pressed="false">°F</button>
+                </div>
+                <button id="theme" class="btn" aria-label="Toggle dark mode">Theme</button>
+            </header>
+
+            <p id="status" class="muted" role="status"></p>
+
+            <!-- <div id="empty" class="empty">
+                <h1>Check the weather anywhere</h1>
+                <p class="muted">Search for a city above, or try one of these.</p>
+                <div class="chips">
+                    <button data-city="London">London</button><button data-city="Tokyo">Tokyo</button>
+                    <button data-city="New York">New York</button><button data-city="Mumbai">Mumbai</button>
+                    <button data-city="Sydney">Sydney</button>
+                </div>
+            </div> -->
+
+            <div id="content" hidden>
+                <section id="now" class="now">
+                    <div class="now-head">
+                        <div>
+                            <h1 id="place"></h1>
+                            <p id="local"></p>
+                        </div>
+                        <div class="now-actions">
+                            <button id="star" class="round" aria-label="Save city" aria-pressed="false">☆</button>
+                            <button id="refresh" class="round" aria-label="Refresh">↻</button>
+                        </div>
+                    </div>
+                    <div class="now-main">
+                        <div class="big" id="temp"></div>
+                        <div>
+                            <p class="cond"><span id="icon"></span> <span id="cond"></span></p>
+                            <p id="hilo"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Next 24 hours</h3>
+                    <div id="hourly" class="strip"></div>
+                </section>
+
+                <section>
+                    <h3>Conditions</h3>
+                    <div id="tiles" class="tiles"></div>
+                </section>
+
+                <section>
+                    <h3>7-day forecast</h3>
+                    <div id="daily" class="daily"></div>
+                </section>
+                <p id="updated" class="muted small"></p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
