@@ -107,7 +107,11 @@ Search for a city and view its weather information.
 
 Video Explanation
 
-Watch the Video Explanation
+Video Explanation
+
+[Watch the Video Explanation](https://drive.google.com/file/d/1oA3ypTNcDX5K3BkUt5Wet3EIK0dkwMbH/view?usp=sharing)
+
+Learning Outcome
 
 Learning Outcome
 
