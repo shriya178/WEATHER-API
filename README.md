@@ -109,8 +109,6 @@ Video Explanation
 
 Watch the Video Explanation
 
-Replace [VIDEO EXPLANATION.]([https://drive.google.com/file/d/1t47En1SB2TLBZVON9SZS9xSu7qtLuiBz/view?usp=sharing](https://drive.google.com/file/d/1oA3ypTNcDX5K3BkUt5Wet3EIK0dkwMbH/view?usp=sharing))
-
 Learning Outcome
 
 Through this project, I understood how an API works with a website and how API data can be fetched, processed, and displayed using JavaScript.
